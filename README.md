@@ -9,7 +9,11 @@ c. I created a report of activities by admin.<br>
 d. I faked the services with hard-coded data.<br>
 e. I used observable and reactive forms<br>
 
-### N:B: The first account that is registered will be assigned to the Admin and all other accounts are assigned to the regular User. Admins have access to the admin section and can manage all accounts, but regular user accounts can only update their own profile.
+#### N.B: 
+
+<b>The first account that is registered will be assigned to the Admin and all other accounts are assigned to the regular User. Admins have access to the admin section and can manage all accounts, but regular user accounts can only update their own profile.</b>
+
+You can check the app out here: <b>[Hassan-HR-Rev-Angular](https://hassan-angular-revent.netlify.app/).</b>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
