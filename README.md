@@ -1,15 +1,15 @@
-# Angular Assignment
+## Angular Assignment
 
-1. I created an Angular application for admin management.
-a. I implemented Login for both user and admin
-i. User login could only see his details.
-ii. The Admin does everything.
-b. I implemented CRUD operations. E.g., created user, deleted user, displayed user, and updated user.
-c. I created a report of activities by admin.
-d. I faked the services with hard-coded data.
-e. I used observable and reactive forms
+1. I created an Angular application for admin management.<br>
+a. I implemented Login for both user and admin<br>
+i. User login could only see his details.<br>
+ii. The Admin does everything.<br>
+b. I implemented CRUD operations. E.g., created user, deleted user, displayed user, and updated user.<br>
+c. I created a report of activities by admin.<br>
+d. I faked the services with hard-coded data.<br>
+e. I used observable and reactive forms<br>
 
-N:B: The first account that is registered will be assigned to the Admin and all other accounts are assigned to the regular User. Admins have access to the admin section and can manage all accounts, but regular user accounts can only update their own profile.
+### N:B: The first account that is registered will be assigned to the Admin and all other accounts are assigned to the regular User. Admins have access to the admin section and can manage all accounts, but regular user accounts can only update their own profile.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
