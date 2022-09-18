@@ -1,0 +1,9 @@
+﻿<div *ngIf="alerts.length" class="container">
+    <div class="m-3">
+        <div *ngFor="let alert of alerts" class="{{cssClasses(alert)}}">
+            <i class="bi bi-x" style="color:red;padding-left: 0px;  cursor: pointer;" (click)="removeAlert(alert)"></i>
+            <span [innerHTML]="alert.message"></span>
+        </div>
+    </div>
+</div>
+

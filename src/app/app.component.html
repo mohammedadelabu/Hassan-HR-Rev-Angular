@@ -1,0 +1,55 @@
+﻿<div class="app-container" [ngClass]="{ 'bg-light': account }">
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="account">
+    <div class="navbar-nav">
+      <img
+        src="assets/img/homelogo.jpeg"
+        alt=""
+        style="
+          width: 55px;
+          height: 50px;
+          padding-left: 10px;
+          margin-right: 20px;
+        "
+      />
+
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-item nav-link"
+        style="padding-top: 20px; padding-right: 20px"
+        >Home</a
+      >
+      <a
+        routerLink="/profile"
+        routerLinkActive="active"
+        class="nav-item nav-link"
+        style="padding-top: 20px; padding-right: 20px"
+        >Profile</a
+      >
+      <a
+        *ngIf="account.role === Role.Admin"
+        routerLink="/admin"
+        routerLinkActive="active"
+        class="nav-item nav-link"
+        style="padding-top: 20px; padding-right: 20px"
+        >Admin</a
+      >
+      <a
+        (click)="logout()"
+        class="nav-item nav-link"
+        style="padding-top: 20px; padding-right: 20px"
+        >Logout</a
+      >
+    </div>
+  </nav>
+
+  <!-- subnav router outlet -->
+  <router-outlet name="subnav"></router-outlet>
+
+  <!-- global alert -->
+  <alert></alert>
+
+  <!-- main router outlet -->
+  <router-outlet></router-outlet>
+</div>
